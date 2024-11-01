@@ -3,8 +3,35 @@
 
 <head>
     <style>
+        #borderimg1{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url(border.jpg);
+            border-image-repeat: stretch;
+            border-image-slice: 30; 
+            border-image-width: 10px;
+
+        }
+        #borderimg2{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url(border.jpg);
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 20px;
+
+        }
+        #borderimg3{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url(border.jpg);
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 30px;
+
+        }
         #rcorners1 {
-            border-radius: 25px;
+            border-radius: 15px 50px 30px 5px;
             background: #8AC007;
             padding: 20px;
             width: 200px;
@@ -39,6 +66,9 @@
 <p id="rcorners1"> Rounded corners!</p>
 <p id="rcorners2"> Rounded corners!</p>
 <p id="rcorners3"> Rounded corners!</p>
+<p id="borderimg1"> this is the border image example</p>
+<p id="borderimg2"> this is the border image example</p>
+<p id="borderimg3"> this is the border image example</p>
 </body>
 
 </html>
