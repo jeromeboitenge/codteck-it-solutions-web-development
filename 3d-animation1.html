@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #myDiv {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            /* sfari */
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            /* general */
+            animation-name: example;
+            animation-duration: 4s;
+        }
+/* for safari */
+        @-webkit-keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+        /* default syntax */
+        @-keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+        #myDiv1 {
+            
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+            /* safari */
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            /* -webkit-animation-count:infinite;
+           -webkit-animation-direction:reversed; */
+            /* general */
+            animation-name: boi;
+            animation-duration: 4s; 
+            position: relative;
+            animation-delay: 2s;
+            /* if you want make it moving all time use infinite
+             else use a spacified sec */
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+        }
+        @-webkit-keyframes boi {
+            0% {
+                background-color: violet; left:0px; top:0px;            }
+
+            25% {
+                background-color: yellow; left:200px; top:opx;
+            }
+
+            50% {
+                background-color: blue; left:200px; top:200px;
+            }
+
+            100% {
+                background-color: green; left:opx; top:0px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="myDiv"></div>
+<div id="myDiv1"></div>
+<script language="javascript"> ducument.writeln("hi, welcome to javascript");</script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #myDiv{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            /* safari */
+            -webkit-animation-name:boi ;
+            -webkit-animation-duration: 4s;
+            /* default */
+            animation-name:boi ;
+            animation-duration: 4s;
+        }
+        @keyframes boi{
+            from{background-color:red;}
+            to {background-color:yellow;}
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+</body>
+</html>
