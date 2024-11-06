@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate(){
+            if(document.myform.name.value==''){
+                alert('please input your name');
+                documrnt.myform.name.focus();
+                return false;           
+             } 
+             if(document.myform.Email=''){
+                alert('please provide your email address');
+                document.myform.Email.focus();
+                return false;            
+             }
+
+             if(document.myform.zip.value=='' 
+             ||isNaN(document.myform.zip.value)
+             ||document.myform.zip.value.length!=5){
+                alert('please enter your zip in format *****');
+                document.myform.zip.focus();
+                return false
+
+             }
+            if(document.myform.country.vale=''){
+                alert('please provide your country');
+                document.myform.country.focus();
+                return false;
+
+            } 
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="myform" onsubmit="return(validate());">
+        <table cellspacing="2" cellpadding="2" border="1">
+            <tr>
+                <td align="right">name</td>
+                <td><input type="text"name="name"></td></tr>
+                <tr>
+                <dt align="right">Email</dt>
+                <td><input type="email" name="Email"></td>
+            </tr>
+            <tr>
+                <td align="right">Zip code</td>
+                <td><input type="text" name="zip"></td>
+            </tr>
+            <tr><td align="right">country</td>
+            <td><select name="country" id="">
+                <option value="-1" selected>[choose yours]</option>
+                <option value="1">India</option>
+                <option value="2">Rwanda</option>
+                <option value="3">Uk</option>
+                <option value="4">USA</option>
+
+            </select>
+        </td></tr>
+        <tr><td align="right"></td>
+        <td><input type="submit" value="submit"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
