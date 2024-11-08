@@ -1,0 +1,8 @@
+.boxDiv{
+    min-height: 150px;
+    padding-left: 20px;
+    background: #f04f;
+    font-weight: bold;
+    color: fff;
+    margin: 5px;
+}
